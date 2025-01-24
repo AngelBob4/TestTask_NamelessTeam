@@ -18,9 +18,9 @@ namespace Infrastructure
 
         private void Start()
         {
-            USDCard = new(_USDCardView, "USD");
-            JPYCard = new(_JPYCardView, "JPY");
-            KZTCard = new(_KZTCardView, "KZT");
+            USDCard = new(_USDCardView, Constants.USDName);
+            JPYCard = new(_JPYCardView, Constants.JPYName);
+            KZTCard = new(_KZTCardView, Constants.KZTName);
 
             List<ExchangeCardView> cards = new List<ExchangeCardView>() { _USDCardView, _JPYCardView, _KZTCardView };
             _exchangePanel.Init(cards);
